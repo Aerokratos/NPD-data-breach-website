@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The NPD Breach: A Timeline of Events</title>
+
+    <!-- LINK TO CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hero">
+        <h1>The National Public Data Breach of NPD
+            <span class="subtitle cyber-glow">Anatomy of a Modern Data Crisis</span>
+        </h1>
+        <p>A Timeline of One of the Largest Data Breaches in History</p>
+    </div>
+
+    <div class="hero-divider"></div>
+
+    <div class="container">
+
+        <section class="timeline-section">
+
+            <!-- DECEMBER 2023 -->
+            <div class="timeline-item">
+                <div class="timeline-date">
+                    <div class="date-box">
+                        <h3>December</h3>
+                        <p>2023</p>
+                    </div>
+                </div>
+
+                <div class="timeline-content">
+                    <h2>The Initial Security Breach</h2>
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&h=400&fit=crop">
+                    </div>
+                    <p>The security incident at National Public Data (NPD) occurred in December 2023 but remained undetected for months. The breach exposed personal data of approximately 272 million individuals.</p>
+                    <p>The database circulated in underground criminal markets, setting the stage for one of the most significant data exposure incidents in recent history.</p>
+                </div>
+            </div>
+
+            <!-- APRIL 2024 -->
+            <div class="timeline-item">
+                <div class="timeline-date">
+                    <div class="date-box">
+                        <h3>April</h3>
+                        <p>2024</p>
+                    </div>
+                </div>
+
+                <div class="timeline-content">
+                    <h2>USDoD Offers Data for Sale</h2>
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&h=400&fit=crop">
+                    </div>
+                    <p>A hacker known as “USDoD” publicly advertised a massive dataset allegedly stolen from National Public Data on underground forums.</p>
+                </div>
+            </div>
+
+            <!-- JULY 2024 -->
+            <div class="timeline-item">
+                <div class="timeline-date">
+                    <div class="date-box">
+                        <h3>July</h3>
+                        <p>2024</p>
+                    </div>
+                </div>
+
+                <div class="timeline-content">
+                    <h2>Massive Leak Surfaces</h2>
+
+                    <div class="stat-grid">
+                        <div class="stat-box">
+                            <h4>2.9B</h4>
+                            <p>Total Records</p>
+                        </div>
+                        <div class="stat-box">
+                            <h4>272M</h4>
+                            <p>Individuals Affected</p>
+                        </div>
+                    </div>
+
+                    <p>The leaked dataset contained billions of records, highlighting severe risks within the data broker ecosystem.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-header">
+            <h2 class="analysis-title">Analysis of the 4 R’s</h2>
+        </section>
+
+        <div class="improvements-grid">
+            <div class="improvement-card">
+                <h3>Reputation</h3>
+                <p>The breach severely damaged public trust due to the scale and lack of transparency.</p>
+            </div>
+
+            <div class="improvement-card">
+                <h3>Relationship</h3>
+                <p>Failure to notify affected individuals weakened stakeholder relationships.</p>
+            </div>
+
+            <div class="improvement-card">
+                <h3>Responsibility</h3>
+                <p>NPD acknowledged the breach but avoided full accountability.</p>
+            </div>
+
+            <div class="improvement-card">
+                <h3>Response</h3>
+                <p>The delayed response allowed data to spread across criminal markets.</p>
+            </div>
+        </div>
+
+        <div class="citation">
+            <strong>Sources:</strong><br><br>
+            KrebsOnSecurity (2024)<br>
+            SBS CyberSecurity (2024)
+        </div>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.timeline-item, .section-header, .improvement-card')
+            .forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>
